@@ -69,8 +69,8 @@ This project serves as a capstone demonstration featuring source code pertaining
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="https://github.com/unorjikingsley/RnB-Meets-Afro"></a>
-### DEMO : [https://www.loom.com/share/e6d2c0d59cad45c1b24afc8dec68b774]
+## 🚀 Live Demo <a name="https://unorjikingsley.github.io/RnB-Meets-Afro/"></a>
+### DEMO : [https://www.loom.com/share/cdc978156b924c33ada855e6669b3baa]
 
 js-hamburger-branch
 - [Live Demo] (https://github.com/unorjikingsley/RnB-Meets-Afro)
