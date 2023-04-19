@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 <a name="readme-top"></a>
 
   <h3><b> Capstone one Project - Concert Website</b></h3>
@@ -68,6 +70,7 @@ This project serves as a capstone demonstration featuring source code pertaining
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="https://github.com/unorjikingsley/RnB-Meets-Afro"></a>
+### DEMO : [https://www.loom.com/share/e6d2c0d59cad45c1b24afc8dec68b774]
 
 js-hamburger-branch
 - [Live Demo] (https://github.com/unorjikingsley/RnB-Meets-Afro)
@@ -134,7 +137,7 @@ The project can't be deployed at the moment
 
 - [ ] **[build other pages]**
 - [ ] **[Designs and forms]**
-- [ ] **[abckend with nodeJS]**
+- [ ] **[backend with nodeJS]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
