@@ -10,9 +10,16 @@
 @media (min-width: 0) and (max-width: 768px) {
   .header {
     background: url('./images/Group\ 57.png');
-    height: 92px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
     padding-left: 30px;
-    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
   }
 
   .nav-toggle {
@@ -22,7 +29,7 @@
     cursor: pointer;
     position: absolute;
     left: 5%;
-    top: 35px;
+    top: 20px;
     z-index: 1000;
   }
 
@@ -152,8 +159,11 @@
   /* .......head2.....  */
 
   .into {
-    background: url('./images/Frame\ 37.png');
     padding: 10px 20px;
+    background: url('./images/con1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
   }
 
   .hello {
@@ -451,21 +461,37 @@
 
   /* ...... about page.....  */
 
+  .abt-d-header {
+    display: none;
+  }
+
   .abt-header {
     background: #e5e5e5;
-    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
     padding-left: 30px;
-    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .abt-bg {
+    background: url('./images/con1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .abt-into {
-    background: url('./images/f1.png');
     height: 180px;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 40px;
     text-align: center;
     padding-bottom: 30px;
+    margin-top: 50px;
   }
 
   .abt-topic {
@@ -473,10 +499,6 @@
     font-weight: 700;
     font-family: 'Lato', sans-serif;
     font-size: 30px;
-  }
-
-  .abt-explain {
-    background: #e5e5e5;
   }
 
   .abt-explaination {
@@ -497,7 +519,6 @@
   }
 
   .cont {
-    background: #e5e5e5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -738,6 +759,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
   }
 
   .d-img-1 {
@@ -774,6 +798,12 @@
     color: #ec5242;
     font-family: 'Lato', sans-serif;
     font-size: 12px;
+  }
+
+  .bg {
+    background: url('./images/con1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .hello {
@@ -1062,10 +1092,23 @@
 
   /* ....about..... */
 
+  .abt-d-header {
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .abt-bg {
+    background: url('./images/con1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .abt-into {
     display: flex;
     justify-content: center;
-    background: #d3d3d3;
     text-align: center;
     align-items: center;
     padding: 40px 0;
@@ -1087,7 +1130,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #d3d3d3;
   }
 
   .abt-explaination {
@@ -1110,7 +1152,6 @@
   .cont {
     padding: 35px 200px 80px 200px;
     text-align: center;
-    background: #d3d3d3;
   }
 
   .email {

@@ -132,9 +132,9 @@ The project can't be deployed at the moment
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Include images]**
+- [ ] **[build other pages]**
 - [ ] **[Designs and forms]**
-- [ ] **[Javascript code]**
+- [ ] **[abckend with nodeJS]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
