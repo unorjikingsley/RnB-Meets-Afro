@@ -63,6 +63,47 @@ const PguestArray = [
     about1: 'They have gained popularity for their unique sound and live performances, and have been recognized for their contribution to the resurgence of highlife music in Nigeria.',
   }];
 
+const bsSect3 = document.querySelector('.bs-speak');
+
+const bsSpeakers = document.createElement('div');
+bsSpeakers.classList.add('bs-prog');
+const h4 = document.createElement('h3');
+h4.classList.add('bs-pro-1');
+h4.textContent = 'Featured Speakers';
+bsSpeakers.appendChild(h4);
+bsSect3.appendChild(bsSpeakers);
+
+PguestArray.forEach((bsGuest) => {
+  const guestdiv = document.querySelector('.bs-guestscontainer');
+  const guests = document.createElement('div');
+  guests.classList.add('bs-guests');
+  const firstDiv = document.createElement('div');
+  firstDiv.classList.add('bs-firstDiv');
+  const pic = document.createElement('img');
+  pic.src = bsGuest.image;
+  pic.classList.add('bs-imgs-2');
+  const secHand = document.createElement('div');
+  secHand.classList.add('bs-secHand');
+  const nme = document.createElement('div');
+  nme.setAttribute('id', 'bs-secHand');
+  nme.textContent = bsGuest.title;
+  const redText = document.createElement('h3');
+  redText.classList.add('bs-redText');
+  redText.textContent = bsGuest.about;
+  const blackText = document.createElement('div');
+  blackText.classList.add('bs-blackText');
+  blackText.textContent = bsGuest.about1;
+
+  secHand.appendChild(nme);
+  secHand.appendChild(redText);
+  secHand.appendChild(blackText);
+  firstDiv.appendChild(pic);
+  firstDiv.appendChild(secHand);
+  guests.appendChild(firstDiv);
+  guestdiv.appendChild(guests);
+  bsSect3.appendChild(guestdiv);
+});
+
 const sect3 = document.querySelector('.speak');
 
 const speakers = document.createElement('div');
@@ -73,8 +114,9 @@ h3.textContent = 'Featured Speakers';
 speakers.appendChild(h3);
 sect3.appendChild(speakers);
 
-PguestArray.forEach((guest) => {
-  const guestdiv = document.querySelector('.guestscontainer');
+const guestdiv = document.querySelector('.guestscontainer');
+
+PguestArray.slice(0, 2).forEach((guest) => {
   const guests = document.createElement('div');
   guests.classList.add('guests');
   const firstDiv = document.createElement('div');
@@ -103,3 +145,64 @@ PguestArray.forEach((guest) => {
   guestdiv.appendChild(guests);
   sect3.appendChild(guestdiv);
 });
+
+const smb = document.createElement('button');
+smb.id = 'smb';
+smb.textContent = ' SEE MORE';
+sect3.appendChild(smb);
+
+smb.addEventListener('click', () => {
+  sect3.removeChild(smb);
+
+  PguestArray.slice(2).forEach((guest) => {
+    const guests = document.createElement('div');
+    guests.classList.add('guests');
+    const firstDiv = document.createElement('div');
+    firstDiv.classList.add('firstDiv');
+    const pic = document.createElement('img');
+    pic.src = guest.image;
+    pic.classList.add('imgs-2');
+    const secHand = document.createElement('div');
+    secHand.classList.add('secHand');
+    const nme = document.createElement('div');
+    nme.setAttribute('id', 'secHand');
+    nme.textContent = guest.title;
+    const redText = document.createElement('h3');
+    redText.classList.add('redText');
+    redText.textContent = guest.about;
+    const blackText = document.createElement('div');
+    blackText.classList.add('blackText');
+    blackText.textContent = guest.about1;
+
+    secHand.appendChild(nme);
+    secHand.appendChild(redText);
+    secHand.appendChild(blackText);
+    firstDiv.appendChild(pic);
+    firstDiv.appendChild(secHand);
+    guests.appendChild(firstDiv);
+    guestdiv.appendChild(guests);
+    sect3.appendChild(guestdiv);
+  });
+});
+
+const smBtn = document.querySelector('#smb');
+let gts = 2;
+
+function showGuests() {
+  const guests = document.querySelectorAll('.guests');
+  guests.forEach((guest, index) => {
+    if (index < gts) {
+      guest.style.display = 'flex';
+    } else {
+      guest.style.display = 'none';
+    }
+  });
+}
+
+smBtn.addEventListener('click', () => {
+  gts += 4;
+  showGuests();
+});
+
+showGuests();
+sect3.appendChild(smBtn);
