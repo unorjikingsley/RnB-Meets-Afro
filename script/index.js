@@ -73,6 +73,7 @@ h4.textContent = 'Featured Speakers';
 bsSpeakers.appendChild(h4);
 bsSect3.appendChild(bsSpeakers);
 
+// for big screen
 PguestArray.forEach((bsGuest) => {
   const guestdiv = document.querySelector('.bs-guestscontainer');
   const guests = document.createElement('div');
@@ -104,6 +105,7 @@ PguestArray.forEach((bsGuest) => {
   bsSect3.appendChild(guestdiv);
 });
 
+// for small screen
 const sect3 = document.querySelector('.speak');
 
 const speakers = document.createElement('div');
@@ -206,3 +208,58 @@ smBtn.addEventListener('click', () => {
 
 showGuests();
 sect3.appendChild(smBtn);
+
+// const sect3 = document.querySelector('.speak');
+
+// const speakers = document.createElement('div');
+// speakers.classList.add('prog');
+// const h3 = document.createElement('h3');
+// h3.classList.add('pro-1');
+// h3.textContent =
+
+// speakers.appendChild(h3);
+
+// PguestArray.forEach((guest) => {
+// const speaker = document.createElement('div');
+// speaker.classList.add('guest');
+// if (guest.hidden) { // check if the hidden property is true
+// speaker.classList.add('hidden'); // add hidden class if it is true
+// }
+
+// const image = document.createElement('img');
+// image.classList.add('g-img');
+// image.setAttribute('src', guest.image);
+// speaker.appendChild(image);
+
+// const title = document.createElement('h4');
+// title.classList.add('g-title');
+// title.textContent = guest.title;
+// speaker.appendChild(title);
+
+// const about = document.createElement('p');
+// about.classList.add('g-about');
+// about.textContent = guest.about;
+// speaker.appendChild(about);
+
+// const about1 = document.createElement('p');
+// about1.classList.add('g-about');
+// about1.textContent = guest.about1;
+// speaker.appendChild(about1);
+
+// speakers.appendChild(speaker);
+// });
+
+// sect3.appendChild(speakers);
+
+// const showMoreBtn = document.createElement('button');
+// showMoreBtn.classList.add('show-more-btn');
+// showMoreBtn.textContent = 'Show More';
+// sect3.appendChild(showMoreBtn);
+
+// showMoreBtn.addEventListener('click', () => {
+// const hiddenGuests = document.querySelectorAll('.hidden');
+// hiddenGuests.forEach((guest) => {
+// guest.classList.remove('hidden');
+// });
+// showMoreBtn.style.display = 'none'; // hide the button after clicking it
+// });
